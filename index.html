@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top écoute de la semaine</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/vue@3.4.0/dist/vue.global.prod.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top écoute</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3.4.0/dist/vue.global.prod.js"></script>
 </head>
 <body>
-<div id="app" class="container">
-<h1>Titre le plus écouté de la semaine</h1>
-<p class="top">{{ top }}</p>
-<p class="info">Les données proviennent des fichiers CSV du dépôt.</p>
-</div>
 
+<div id="app" class="layout">
+
+  <div class="sidebar">
+    <div class="buttons">
+      <button :class="{active: mode==='track'}" @click="switchMode('track')">Titres</button>
+      <button :class="{active: mode==='artist'}" @click="switchMode('artist')">Artistes</button>
+      <button :class="{active: mode==='album'}" @click="switchMode('album')">Albums</button>
+    </div>
+
+    <div v-for="(e,i) in top9" :key="i" class="item">
+      <div class="rank">#{{ i+1 }}</div>
+      <div class="line1">{{ e.line1 }}</div>
+      <div class="line2" v-if="e.line2">{{ e.line2 }}</div>
+      <div class="line3" v-if="e.line3">{{ e.line3 }}</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1 class="title">Top de la semaine</h1>
+    <p>Affichage dynamique selon la sélection.</p>
+  </div>
+
+</div>
 
 <script src="app.js"></script>
 </body>

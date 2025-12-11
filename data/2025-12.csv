@@ -1,9 +1,19 @@
-date,track
-2025-12-01,Daft Punk - Harder Better Faster Stronger
-2025-12-01,Daft Punk - Harder Better Faster Stronger
-2025-12-01,Radiohead - No Surprises
-2025-12-02,Muse - Hysteria
-2025-12-03,Daft Punk - Harder Better Faster Stronger
-2025-12-05,Radiohead - No Surprises
-2025-12-07,Radiohead - No Surprises
-2025-12-08,Muse - Hysteria
+date,track,artist,album,plays,minutes
+2025-12-01,musique a11,artiste a,album a1,1,3
+2025-12-01,musique a11,artiste a,album a1,1,3
+2025-12-02,musique a12,artiste a,album a1,1,4
+2025-12-02,musique b21,artiste b,album b2,1,5
+2025-12-03,musique c31,artiste c,album c3,1,2
+2025-12-03,musique a11,artiste a,album a1,1,3
+2025-12-04,musique b21,artiste b,album b2,1,5
+2025-12-04,musique b21,artiste b,album b2,1,5
+2025-12-05,musique c31,artiste c,album c3,1,2
+2025-12-05,musique a12,artiste a,album a1,1,4
+2025-12-06,musique a11,artiste a,album a1,1,3
+2025-12-06,musique d41,artiste d,album d4,1,6
+2025-12-07,musique d41,artiste d,album d4,1,6
+2025-12-07,musique b21,artiste b,album b2,1,5
+2025-12-08,musique a12,artiste a,album a1,1,4
+2025-12-08,musique c31,artiste c,album c3,1,2
+2025-12-09,musique a11,artiste a,album a1,1,3
+2025-12-09,musique c31,artiste c,album c3,1,2
